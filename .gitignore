@@ -1,0 +1,8 @@
+#testing junk
+./a.out
+
+
+/node_modules
+static/*
+!static/custom/
+

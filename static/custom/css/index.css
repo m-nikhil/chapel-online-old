@@ -1,0 +1,87 @@
+
+        html, body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            font-family: "Courier New"; 
+        }
+        
+         body{
+        display: flex; 
+        flex-direction: column;
+        }
+
+        .panel-container {
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+            flex-grow: 1;
+        }
+
+        .panel-left {
+            width: 55%;
+            background: #ccc;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .splitter {
+            width: 6px;
+            background: #000;
+            position: relative;
+            cursor: col-resize;
+            z-index: 900;
+            
+        }
+
+        .panel-right, #output{
+            flex: auto;
+            background: #000;
+            border-radius: 4px;
+         }
+         
+
+
+        #output{
+           user-select: text;
+           position: relative;
+           line-height: 1.5;
+           font-size: 16px;
+           padding: 12px 12px;          
+           overflow-y: scroll;
+           height: 100%;
+           width: 100%;
+           color: #fff;
+	   boarder: 1px solid #ccc;
+           resize: none;
+           cursor: auto;
+           white-space: pre-wrap;
+           word-wrap: break-word;
+        }
+
+        .panel-container,
+        .splitter,
+        .left-pane,
+        .right-pane {
+            postion: absolute;
+            margin: 0;
+            padding: 0;
+            bottom: 0;
+        }
+
+        #editor {
+        position: relative;
+        top: 0;
+        right: 0; 
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        }
+
+
+/* Bootstrap */
+        .navbar{
+         border-radius: 0px;
+         margin: 0px;
+        }
