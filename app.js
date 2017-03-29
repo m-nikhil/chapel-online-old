@@ -1,4 +1,4 @@
-//Created by Nikhil @2017
+//Created by Nikhil gsoc@2017
 
 var express = require('express')
 var engine = require('ejs-locals');
@@ -10,9 +10,12 @@ app.set('view engine', 'ejs');
 
 app.use(express.static('static'));
 
-app.get('/',function(resquest, response) {
-	response.render('index');
-});
+//routes
+var home = require('./routes/home');
+app.use('/',home);
+
+var run = require('./routes/run');
+app.use('/run',run);
 
 app.listen(3000, function(){
 	console.log('Chapel-online listening on port 3000');

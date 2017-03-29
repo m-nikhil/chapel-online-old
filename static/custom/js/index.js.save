@@ -18,11 +18,9 @@ $( document ).ready(function() {
   $("#run").click(function() {
 
     console.log("run clicked");
- 
-    $.post( "/run", function( data ) {
-      $( "#editor" ).text( data )
-      console.log( $( "#editor" ).text( data ) );
-     });
+    
+    var code = editor.getValue();
+    $.post( "/run", { });
 
   });
 });

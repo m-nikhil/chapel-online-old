@@ -3,19 +3,16 @@
             height: 100%;
             margin: 0px;
             padding: 0px;
-            font-family: "Courier New"; 
         }
-        
-         body{
-        display: flex; 
-        flex-direction: column;
+
+        body{
+        flex-flow: column;
         }
 
         .panel-container {
             display: flex;
             width: 100%;
             overflow: hidden;
-            flex-grow: 1;
         }
 
         .panel-left {
@@ -46,7 +43,7 @@
            user-select: text;
            position: relative;
            line-height: 1.5;
-           font-size: 16px;
+           font-size: 15px;
            padding: 12px 12px;          
            overflow-y: scroll;
            height: 100%;
@@ -79,11 +76,6 @@
         width: 100%;
         }
 
-/* control */
-        .control{
-         padding-left: 20px;
-        }
-                
 
 /* Bootstrap */
         .navbar{
