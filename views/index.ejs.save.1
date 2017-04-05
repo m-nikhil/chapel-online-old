@@ -1,0 +1,52 @@
+<% layout('layout') -%>
+
+<% script('jquery/dist/jquery.min.js') -%>
+<% script('bootstrap/dist/js/bootstrap.min.js') -%>
+<% script('jquery-resizable/dist/jquery-resizable.min.js') -%>
+<% script('ace-builds/src/ace.js') -%>
+<% script('custom/js/index.js') -%>
+<% script('/socket.io/socket.io.js') -%>
+
+<% stylesheet('normalize-css/normalize.css') -%>
+<% stylesheet('bootstrap/dist/css/bootstrap.min.css') -%>
+<% stylesheet('font-awesome/css/font-awesome.css') -%>
+<% stylesheet('custom/css/index.css') -%>
+
+<script>
+console.log("works...");
+</script>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+     <div class="navbar-header">
+      <a class="navbar-brand" href="http://chapel.cray.com/">Chapel Online</a>
+     </div>
+     <ul class="nav navbar-nav navbar-left control">
+     
+<button type="button" id="run" class="btn btn-default navbar-btn"><strong>Run</strong><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> </button>
+<button type="button" id="start" class="btn btn-default navbar-btn"><strong>Start</strong><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> </button>
+<button type="button" id="pause" class="btn btn-default navbar-btn"><strong>Pause</strong><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i$    
+
+    </ul>
+     <ul class="nav navbar-nav navbar-right">
+      <li><a href="https://github.com/m-nikhil">Crafted with <i class="fa fa-heart" aria-hidden="true"></i> by m-nikhil@github</a></li>
+     </ul>
+  </div> </nav>
+
+<div class="panel-container">B
+
+           <div class="panel-left"> 
+                <div id="editor">
+Code goes here...
+                </div>
+             
+            </div>
+
+            <div class="splitter">
+            </div>
+
+            <div class="panel-right">
+                <textarea id="output" placeholder="Output here..." readonly></textarea>
+            </div>
+</div>
+
+  

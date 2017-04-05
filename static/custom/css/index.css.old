@@ -34,8 +34,8 @@
             
         }
 
-       .panel-right, .panel-top, #output, .panel-bottom {
-	    flex: auto;            
+        .panel-right, #output{
+            flex: auto;
             background: #000;
             border-radius: 4px;
          }
@@ -71,65 +71,12 @@
 
         #editor {
         position: relative;
-B        top: 0;
+        top: 0;
         right: 0; 
         bottom: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        }
-
-
-
-
-.panel-container-vertical {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden;
-}
-
-.panel-top {
-  flex: 0 0 auto;
-  /* only manually resize */
-
-  height: 75%;
-
-  white-space: nowrap;
-  background: #838383;
-  color: white;
-}
-
-.splitter-horizontal {
-  flex: 0 0 auto;
-  height: 6px;
-background: #000;
-  cursor: row-resize;
-}
-
-.panel-bottom {
-  flex: 1 1 auto;
-  /* resizable */
- 
-  height: 100%;
-  background: #fff;
-}
-
-       #input{
-           user-select: text;
-           position: relative;
-           line-height: 1.5;
-           font-size: 16px;
-           padding: 12px 12px;
-           overflow-y: scroll;
-           height: 100%;
-           width: 100%;
-           color: #000;
-           boarder: 1px solid #ccc;
-           resize: none;
-           cursor: auto;
-           white-space: pre-wrap;
-           word-wrap: break-word;
         }
 
 /* control */
